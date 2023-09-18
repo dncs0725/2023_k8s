@@ -23,11 +23,11 @@ spec:
               protocol: TCP
           resources:
             requests:
-              memory: "18M"
+              memory: "180M"
               cpu: "150m"
               ephemeral-storage: "100M"
             limits:
-              memory: "20M"
+              memory: "180M"
               cpu: "300m"
               ephemeral-storage: "100M"
 ---
