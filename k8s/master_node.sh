@@ -29,18 +29,19 @@ echo "alias kd='kubectl delete -f'" >> ~/.bashrc
 echo 'complete -F __start_kubectl k' >> ~/.bashrc
 
 # git clone k8s-code
-git clone https://github.com/sysnet4admin/_Lecture_k8s_starter.kit.git
-mv /home/vagrant/_Lecture_k8s_starter.kit $HOME
-find $HOME/_Lecture_k8s_starter.kit -regex ".*\.\(sh\)" -exec chmod 700 {} \;
+git clone https://github.com/dncs0725/2023_k8s.git
+mv /home/vagrant/2023_k8s $HOME
+find $HOME/2023_k8s -regex ".*\.\(sh\)" -exec chmod 700 {} \;
 
-# make rerepo-k8s-starter.kit and put permission
-cat <<EOF > /usr/local/bin/rerepo-k8s-starter.kit
-#!/usr/bin/env bash
-rm -rf $HOME/_Lecture_k8s_starter.kit 
-git clone https://github.com/sysnet4admin/_Lecture_k8s_starter.kit.git $HOME/_Lecture_k8s_starter.kit
-find $HOME/_Lecture_k8s_starter.kit -regex ".*\.\(sh\)" -exec chmod 700 {} \;
-EOF
-chmod 700 /usr/local/bin/rerepo-k8s-starter.kit
+### make rerepo-k8s-starter.kit and put permission
+##cat <<EOF > /usr/local/bin/rerepo-k8s-starter.kit
+###!/usr/bin/env bash
+##rm -rf $HOME/_Lecture_k8s_starter.kit 
+##git clone https://github.com/sysnet4admin/_Lecture_k8s_starter.kit.git $HOME/_Lecture_k8s_starter.kit
+##find $HOME/_Lecture_k8s_starter.kit -regex ".*\.\(sh\)" -exec chmod 700 {} \;
+##EOF
+##chmod 700 /usr/local/bin/rerepo-k8s-starter.kit
+##
 
 # extended k8s certifications all
 git clone https://github.com/yuyicai/update-kube-cert.git /tmp/update-kube-cert
