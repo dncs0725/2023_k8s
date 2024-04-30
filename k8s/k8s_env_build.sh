@@ -17,7 +17,7 @@ baseurl=https://pkgs.k8s.io/core:/stable:/v1.25/rpm/
 enabled=1
 gpgcheck=1
 gpgkey=https://pkgs.k8s.io/core:/stable:/v1.25/rpm/repodata/repomd.xml.key
-exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+#exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
 EOF
 
 # Set SELinux in permissive mode (effectively disabling it)
